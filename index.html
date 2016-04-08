@@ -1,47 +1,26 @@
-<!doctype html>
-<html dir="rtl">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Mostafa Website</title>
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/github-dark.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script src="javascripts/main.js"></script>
-    <!--[if lt IE 9]>
-      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+---
+layout: default
+---
 
-  </head>
-  <body>
+<div class="home">
 
-      <header>
-        <h1>Mostafa Moradi WebSite</h1>
-        <p>I Writing about some thing</p>
-      </header>
+  <h1 class="page-heading">  صفحه ی اصلی</h1>
 
-      <div id="banner">
-        
+  <ul class="post-list">
+    {% for post in site.posts %}
+      <div><li>
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
 
-        
-      </div><!-- end banner -->
+        <h2>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}
+          <img class="post-image" "post-link"  src="{{post.image-id}}.jpg"/></a>
+		</h2>
+		
+      </li>
+	  </div>
+    {% endfor %}
+  </ul>
 
-    <div class="wrapper">
-      <nav>
-        <ul></ul>
-      </nav>
-      <section>
-        <h3>
-<a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>I'm Bozorgmehr student.</h3>
+  
 
-
-      </section>
-      <footer>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></small></p>
-      </footer>
-    </div>
-    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
-    
-  </body>
-</html>
+</div>
