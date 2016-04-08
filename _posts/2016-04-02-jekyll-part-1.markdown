@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "آموزش نصب جکیل (قسمت دوم)"
-date:   
+date: 2016-04-02  
 categories: jekyll update
 image-id: jekyll-1
 ---
