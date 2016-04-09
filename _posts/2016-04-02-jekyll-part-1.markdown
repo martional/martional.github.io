@@ -9,6 +9,8 @@ image-id: jekyll-1
 
 1. چون جکیل با زبان روبی نوشته شده باید روبی رو نصب کنیم. نصب روبی خیلی راحت بوسیله لینک زیر ممکن است:
 
+ruby devkit installer
+
 [ruby installer] (http://rubyinstaller.org/downloads/)
 
 فقط در نصب تیک زیر را فراموش نکنید. بقیه نصب به راحتی طی می شود.
