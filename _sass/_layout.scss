@@ -12,14 +12,26 @@
 	background: -ms-linear-gradient(45deg, rgba(255,0,0,1) 0%, rgba(5,193,255,1) 83%, rgba(0,0,0,1) 100%); /* ie10+ */
 	background: linear-gradient(45deg, rgba(255,0,0,1) 0%, rgba(5,193,255,1) 83%, rgba(0,0,0,1) 100%); /* w3c */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#FF0000',GradientType=1 ); /* ie6-9 */
-
+	font-family: Yekan;
 
 
     // Positioning context for the mobile navigation icon
     position: relative;
 }
 
+@font-face {
+    font-family: Yekan;
+    src: url(/Yekan.ttf);
+}
+
+$base-font-family: Helvetica Neue,irsans,Yekan, Helvetica, sans-serif;
+h1 {
+    $base-font-family:Yekan;
+	font-family: Yekan;
+}
+
 .site-title {
+	font-family: Yekan;
     font-size: 19px;
     font-weight: 400;
     line-height: 56px;
@@ -27,7 +39,7 @@
     margin-bottom: 0;
     float: right;
 	margin-left: 10px;
-
+	$base-font-family:Yekan;
     &,
     &:visited {
         color: red;
@@ -38,7 +50,8 @@
     float: right;
 	font-size: 18px;
     line-height: 56px;
-
+	$base-font-family:Yekan;
+	font-family: Yekan;
     .menu-icon {
         display: none;
     }
@@ -46,12 +59,14 @@
     .page-link {
         color: white;
         line-height: $base-line-height;
-
+		$base-font-family:Yekan;
+		font-family: Yekan;
         // Gaps between nav items, but not on the last one
         &:not(:last-child) {
             margin-right: 10px;
 			margin-left: 10px;
-			
+			$base-font-family:Yekan;
+			font-family: Yekan;
         }
     }
 
@@ -63,7 +78,8 @@
         border: 1px solid $grey-color-light;
         border-radius: 5px;
         text-align: right;
-
+		$base-font-family:Yekan;
+		font-family: Yekan;
         .menu-icon {
             display: block;
             float: right;
@@ -72,7 +88,8 @@
             line-height: 0;
             padding-top: 10px;
             text-align: center;
-
+			$base-font-family:Yekan;
+			font-family: Yekan;
             > svg {
                 width: 18px;
                 height: 15px;
@@ -100,7 +117,8 @@
 			border-bottom: 5px solid $grey-color-dark;
 			border-left: 5px solid $grey-color-dark;
 			border-right: 5px solid $grey-color-dark;
-
+			$base-font-family:Yekan;
+			font-family: Yekan;
             &:not(:last-child) {
                 margin-right: 0;
             }
